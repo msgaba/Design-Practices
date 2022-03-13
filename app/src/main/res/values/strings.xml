@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Design Practices</string>
+    <string name="login_account">Login Account</string>
+    <string name="welcome">Hello, welcome back to our account</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email_id">Email id</string>
+    <string name="code">+91</string>
+    <string name="phone_hint">+6282179410083</string>
+    <string name="email_hint">abc@gmail.com</string>
+    <string name="verification_msg_mobile">We have sent the code verification to \nYour Mobile Number</string>
+    <string name="verification_msg_email">We have sent the code verification to \nYour Email id</string>
+    <string name="verification_code">Verification code</string>
+    <string name="_1">1</string>
+    <string name="_8">8</string>
+    <string name="_3">3</string>
+    <string name="_2">2</string>
+    <string name="submit">Submit</string>
+    <string name="google">Google</string>
+    <string name="or_sign_in_with_google">or Sign in with Google</string>
+    <string name="request_otp">Request OTP</string>
+    <string name="build_your_empire_here">Build your Empire here</string>
+    <string name="together_we_make_a_better_future">Together we make a better future...</string>
+    <string name="get_started">Get Started</string>
+    <string name="login">Login</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="otp_verified">OTP Verified</string>
+    <string name="user_verified">User Verified</string>
+</resources>

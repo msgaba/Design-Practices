@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSize12sp">12sp</dimen>
+    <dimen name="textSize14sp">14sp</dimen>
+    <dimen name="textSize16sp">16sp</dimen>
+    <dimen name="textSize18sp">18sp</dimen>
+    <dimen name="textSize20sp">20sp</dimen>
+    <dimen name="textSize24sp">24sp</dimen>
+    <dimen name="textSize36sp">36sp</dimen>
+    <dimen name="textSize54sp">54sp</dimen>
+    <!-- common width and heights -->
+    <dimen name="dimen_150dp">150dp</dimen>
+    <dimen name="dimen_72dp">72dp</dimen>
+    <dimen name="dimen_56dp">56dp</dimen>
+    <dimen name="dimen_48dp">48dp</dimen>
+    <dimen name="dimen_32dp">32dp</dimen>
+    <dimen name="dimen_24dp">24dp</dimen>
+    <dimen name="dimen_16dp">16dp</dimen>
+    <dimen name="dimen_12dp">12dp</dimen>
+    <dimen name="dimen_8dp">8dp</dimen>
+    <dimen name="dimen_1dp">1dp</dimen>
+    <dimen name="dimen_0dp">0dp</dimen>
+</resources>
