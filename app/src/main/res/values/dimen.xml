@@ -10,6 +10,7 @@
     <dimen name="textSize54sp">54sp</dimen>
     <!-- common width and heights -->
     <dimen name="dimen_150dp">150dp</dimen>
+    <dimen name="dimen_125dp">125dp</dimen>
     <dimen name="dimen_72dp">72dp</dimen>
     <dimen name="dimen_56dp">56dp</dimen>
     <dimen name="dimen_48dp">48dp</dimen>

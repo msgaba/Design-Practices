@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <ImageView
         android:id="@+id/cover_image"
-        android:layout_marginStart="@dimen/dimen_32dp"
-        android:layout_marginEnd="@dimen/dimen_32dp"
-        android:layout_marginTop="@dimen/dimen_32dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_cover" />
+        android:layout_marginStart="@dimen/dimen_32dp"
+        android:layout_marginTop="@dimen/dimen_32dp"
+        android:layout_marginEnd="@dimen/dimen_32dp"
+        android:src="@drawable/ic_cover"
+        android:transitionName="@string/transition" />
 
     <TextView
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dimen_32dp"
-        android:layout_marginEnd="@dimen/dimen_32dp"
         android:layout_marginTop="@dimen/dimen_32dp"
+        android:layout_marginEnd="@dimen/dimen_32dp"
         android:text="@string/build_your_empire_here"
         android:textColor="@color/mid_grey"
         android:textSize="@dimen/textSize54sp" />
@@ -28,20 +30,30 @@
         android:id="@+id/sub_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/together_we_make_a_better_future"
         android:layout_marginStart="@dimen/dimen_32dp"
-        android:layout_marginEnd="@dimen/dimen_32dp"
         android:layout_marginTop="@dimen/dimen_32dp"
+        android:layout_marginEnd="@dimen/dimen_32dp"
+        android:text="@string/together_we_make_a_better_future"
         android:textSize="@dimen/textSize16sp"
         android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/image_tick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_32dp"
+        android:src="@drawable/ic_verification"
+        android:transitionName="@string/image_logo_transition"
+        tools:ignore="UseAppTint" />
 
     <Button
         android:id="@+id/button_get_started"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dimen_32dp"
+        android:layout_marginTop="@dimen/dimen_32dp"
         android:layout_marginEnd="@dimen/dimen_32dp"
-        android:layout_marginTop="@dimen/dimen_72dp"
         android:background="@drawable/round_corner_background"
         android:backgroundTint="@color/teal_bg"
         android:text="@string/get_started"

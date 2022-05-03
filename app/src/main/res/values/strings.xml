@@ -26,4 +26,8 @@
     <string name="enter_otp">Enter OTP</string>
     <string name="otp_verified">OTP Verified</string>
     <string name="user_verified">User Verified</string>
+
+    <!-- animation transitions -->
+    <string name="image_logo_transition">logoImageTransition</string>
+    <string name="transition">Transition</string>
 </resources>

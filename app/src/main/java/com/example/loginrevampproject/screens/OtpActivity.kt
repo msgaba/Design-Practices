@@ -2,12 +2,11 @@ package com.example.loginrevampproject.screens
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityOptionsCompat
+import androidx.core.util.Pair
 import com.example.loginrevampproject.R
 import com.example.loginrevampproject.databinding.ActivityOtpBinding
-
-/**
- * Created by Ankita
- */
+import com.example.loginrevampproject.wrapper.tint
 
 const val _ENTER = 1
 const val _VALIDATE = 2
@@ -24,6 +23,11 @@ class OtpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityOtpBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        ActivityOptionsCompat.makeSceneTransitionAnimation(
+            this,
+            Pair.create(binding.imageTick1, getString(R.string.image_logo_transition)),
+            Pair.create(binding.coverImage, getString(R.string.transition))
+        )
         clickListenerSetup()
         enterOtpFragmentSetup()
     }
@@ -44,6 +48,7 @@ class OtpActivity : AppCompatActivity() {
     fun otpValidateFragmentSetup() {
         currentScreen = _VALIDATE
         setToolbarTitle(getString(R.string.enter_otp))
+        binding.imageTick2.tint(this, R.color.green)
         val fragment = OtpValidationFragment()
         supportFragmentManager.beginTransaction()
             .add(binding.frame.id, fragment, OtpValidationFragment::class.java.name)
@@ -54,6 +59,7 @@ class OtpActivity : AppCompatActivity() {
     fun otpAuthenticationFragmentSetup() {
         currentScreen = _AUTHENTICATE
         setToolbarTitle(getString(R.string.otp_verified))
+        binding.imageTick3.tint(this, R.color.green)
         val fragment = OtpAuthenticationFragment()
         supportFragmentManager.beginTransaction()
             .add(binding.frame.id, fragment, OtpAuthenticationFragment::class.java.name)
@@ -69,10 +75,14 @@ class OtpActivity : AppCompatActivity() {
                 }
                 _VALIDATE -> {
                     supportFragmentManager.popBackStack()
+                    setToolbarTitle(getString(R.string.login))
+                    binding.imageTick2.tint(this, R.color.lightest_grey)
                     currentScreen = _ENTER
                 }
                 _AUTHENTICATE -> {
                     supportFragmentManager.popBackStack()
+                    setToolbarTitle(getString(R.string.enter_otp))
+                    binding.imageTick3.tint(this, R.color.lightest_grey)
                     currentScreen = _VALIDATE
                 }
                 else -> finish()

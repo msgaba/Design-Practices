@@ -9,7 +9,7 @@
         android:id="@+id/header_image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_150dp"
+        android:layout_marginTop="@dimen/dimen_125dp"
         android:src="@drawable/ic_authentication"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
